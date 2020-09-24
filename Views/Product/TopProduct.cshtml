@@ -1,0 +1,16 @@
+﻿@model WebApp1.Models.Product
+@{
+    ViewData["Title"] = "TopProduct";
+}
+
+<h1>TopProduct</h1>
+<h5>Product ID: @Model.ProductID</h5>
+
+<div>
+    <dl class="display">
+        <dt>Name:</dt>
+        <dd>@Model.ProductID</dd>
+        <dt>UnitPrice:</dt>
+        <dd>@Model.UnitPrice</dd>
+    </dl>
+</div>

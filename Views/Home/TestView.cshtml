@@ -1,0 +1,46 @@
+﻿@model WebApp1.Models.Product
+@{
+    ViewData["Title"] = "TestView";
+    Layout = "_LayoutCustom";
+
+}
+
+<h1>TestView</h1>
+
+<div>
+    <h2>
+       Profile:  @ViewBag.MyProfile
+    </h2>
+    <h3>
+        CourseID @ViewBag.id
+    </h3>
+
+</div>
+
+<div>
+    <table class="table table-bordered">
+        <tr>
+            <th>Name</th>
+            <th>Company</th>
+            <th>Course</th>
+            <th>Hours</th>
+            
+        </tr>
+        <tr>
+            <td>@ViewBag.MyName</td>
+            <td>@ViewData["MyCompany"]</td>
+            <td>@ViewBag.MyCourse</td>
+            <td>@ViewBag.MyHours</td>
+
+        </tr>
+    </table>
+</div>
+
+<div>
+    <dl class="display">
+        <dt>Name:</dt>
+        <dd>@Model.Name</dd>
+        <dt>UnitPrice:</dt>
+        <dd>@Model.UnitPrice</dd>
+    </dl>
+</div>
